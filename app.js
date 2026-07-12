@@ -6,7 +6,7 @@
 // ==========================================================================
 // CONFIGURACIÓN DE TARIFAS Y CONTACTO
 // ==========================================================================
-const PHONE_NUMBER = "5491130000000"; // Reemplaza con tu número de WhatsApp real (incluyendo código de país)
+const TELEGRAM_USER = "Altairss262"; // Tu usuario de Telegram (@Altairss262)
 
 const PRICING_TIERS = {
   1: {
@@ -56,7 +56,7 @@ const breakdownQty = document.getElementById('breakdown-qty');
 const breakdownBaseRate = document.getElementById('breakdown-base-rate');
 const breakdownDiscountRow = document.getElementById('breakdown-discount-row');
 const breakdownDiscountAmount = document.getElementById('breakdown-discount-amount');
-const whatsappCtaBtn = document.getElementById('whatsapp-cta-btn');
+const telegramCtaBtn = document.getElementById('telegram-cta-btn');
 
 // ==========================================================================
 // LÓGICA DE CÁLCULO Y ANIMACIÓN
@@ -96,8 +96,8 @@ function updateCalculator() {
   // Animar el precio total de forma fluida
   animatePrice(Math.round(total));
   
-  // Actualizar el enlace del botón de WhatsApp
-  updateWhatsAppLink(tier, qty, unitPrice, discount, total);
+  // Actualizar el enlace del botón de Telegram
+  updateTelegramLink(tier, qty, unitPrice, discount, total);
 }
 
 /**
@@ -137,27 +137,27 @@ function animatePrice(targetPrice) {
 }
 
 /**
- * Genera y actualiza la URL para el contacto de WhatsApp con un mensaje pre-redactado
+ * Genera y actualiza la URL para el contacto de Telegram con un mensaje pre-redactado
  */
-function updateWhatsAppLink(tier, qty, unitPrice, discount, total) {
+function updateTelegramLink(tier, qty, unitPrice, discount, total) {
   const modeText = state.isMonthly 
     ? `Paquete Mensual (Ahorro del ${PACK_DISCOUNT_PERCENT}%)` 
     : 'Videos Individuales';
     
   const discountText = discount > 0 
-    ? `\n- *Ahorro mensual:* -$${discount.toFixed(2)} USD` 
+    ? `\n- Ahorro mensual: -$${discount.toFixed(2)} USD` 
     : '';
 
   const message = `¡Hola! Visité tu portafolio y coticé un proyecto mediante el tarificador:\n\n` +
-    `🎥 *Detalles del Servicio:*\n` +
-    `- *Nivel:* ${tier.name}\n` +
-    `- *Cantidad:* ${qty} ${qty === 1 ? 'video' : 'videos'}\n` +
-    `- *Modalidad:* ${modeText}${discountText}\n` +
-    `- *Precio promedio sugerido:* $${unitPrice} USD por video\n\n` +
-    `💰 *Presupuesto Estimado:* $${total.toFixed(2)} USD\n\n` +
+    `🎥 Detalles del Servicio:\n` +
+    `- Nivel: ${tier.name}\n` +
+    `- Cantidad: ${qty} ${qty === 1 ? 'video' : 'videos'}\n` +
+    `- Modalidad: ${modeText}${discountText}\n` +
+    `- Precio promedio sugerido: $${unitPrice} USD por video\n\n` +
+    `💰 Presupuesto Estimado: $${total.toFixed(2)} USD\n\n` +
     `Me gustaría conversar sobre los detalles de edición y comenzar.`;
 
-  whatsappCtaBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+  telegramCtaBtn.href = `https://t.me/${TELEGRAM_USER}?text=${encodeURIComponent(message)}`;
 }
 
 // ==========================================================================
@@ -280,6 +280,21 @@ function setupTierCardsButtons() {
 // PORTFOLIO EVOLUTIVO / SHOWCASE INTERACTIVO
 // ==========================================================================
 const PORTFOLIO_DATA = {
+  0: {
+    badge: "Fase de Origen",
+    title: "Nivel 0: Video Crudo",
+    description: "El video tal y como se grabó desde el teléfono celular. Contiene silencios prolongados, errores de voz, muletillas y carece de dinamismo o apoyo visual.",
+    videoSrc: "Portafolio/Video previo 1.mp4",
+    retention: "15%",
+    retentionVal: 15,
+    retentionColor: "var(--text-muted)",
+    comment: "Baja retención. La mayoría de los usuarios abandonan el video en los primeros 3 segundos.",
+    addedValue: [
+      "Sin cortes de silencios o errores.",
+      "Sin subtítulos (difícil de entender sin audio).",
+      "Audio y color en bruto (sin masterización)."
+    ]
+  },
   1: {
     badge: "Fase de Edición 1",
     title: "Nivel 1: Esencial",
@@ -290,9 +305,9 @@ const PORTFOLIO_DATA = {
     retentionColor: "var(--accent-cyan)",
     comment: "Ideal para mantener presencia básica, pero con riesgo de abandono temprano.",
     addedValue: [
-      "Elimina el 100% de los silencios, muletillas y 'ehh...'",
-      "Añade subtítulos con estilo para retener a los usuarios sin sonido.",
-      "Pule el audio de fondo y estabiliza el volumen de la voz."
+      "Cortes y flujo básico de clips (Lección 2.2)",
+      "Subtítulos automáticos y exportar (Lección 2.2.1)",
+      "Corrección de color y ecualización básica"
     ]
   },
   2: {
@@ -306,9 +321,10 @@ const PORTFOLIO_DATA = {
     comment: "Aumenta la retención visual media. Excelente para construir una marca sólida.",
     addedValue: [
       "Todo lo del Nivel 1 incluido.",
-      "Cortes dinámicos con zoom-ins/out que mantienen el ritmo constante.",
-      "B-Rolls de stock y memes estáticos para dar apoyo visual a tus palabras.",
-      "Efectos de sonido básicos (SFX) para acentuar las transiciones."
+      "Animaciones, transiciones y efectos (Lección 2.3)",
+      "Mejoras de audio, música y SFX (Lección 2.4)",
+      "Ajustes de color, filtros y retoque (Lección 2.5)",
+      "Material de apoyo y B-rolls estáticos"
     ]
   },
   3: {
@@ -322,15 +338,15 @@ const PORTFOLIO_DATA = {
     comment: "Máxima retención para hooks de anuncios. Optimizado para convertir espectadores en clientes.",
     addedValue: [
       "Todo lo del Nivel 2 incluido.",
-      "Gráficos dinámicos y listas numeradas animadas al ritmo de la voz.",
-      "Personajes Flork animados con movimiento y gags personalizados.",
-      "Diseño de sonido detallado (impactos, record scratches, risas, suspiros).",
-      "Estructura orientada a ventas y optimización de ganchos (hooks)."
+      "Eliminar fondo y duplicar capa (Lección 2.6)",
+      "Máscaras y encuadres avanzados (Lección 2.7)",
+      "Animaciones personalizadas con Keyframes (Lección 2.8)",
+      "Edición estratégica y extras/tips (Lección 2.9)"
     ]
   }
 };
 
-let currentPortfolioTier = 1;
+let currentPortfolioTier = 0; // Iniciar en el Nivel 0 (Crudo)
 
 function setupPortfolioShowcase() {
   const tabs = document.querySelectorAll('.portfolio-tab');
@@ -375,7 +391,9 @@ function setupPortfolioShowcase() {
       addedValueList.innerHTML = '';
       data.addedValue.forEach(val => {
         const li = document.createElement('li');
-        li.innerHTML = `<i data-lucide="check"></i> <span>${val}</span>`;
+        const iconName = tierId === 0 ? "x" : "check";
+        const iconColor = tierId === 0 ? "style='color: var(--text-muted);'" : "";
+        li.innerHTML = `<i data-lucide="${iconName}" ${iconColor}></i> <span>${val}</span>`;
         addedValueList.appendChild(li);
       });
 
@@ -400,7 +418,9 @@ function setupPortfolioShowcase() {
       const calcSection = document.getElementById('calculadora');
       calcSection.scrollIntoView({ behavior: 'smooth' });
 
-      const targetBtn = document.getElementById(`btn-lvl-${currentPortfolioTier}`);
+      // Si el usuario cotiza desde Nivel 0 (Crudo), se redirige a Nivel 1 (Esencial)
+      const targetTier = currentPortfolioTier === 0 ? 1 : currentPortfolioTier;
+      const targetBtn = document.getElementById(`btn-lvl-${targetTier}`);
       if (targetBtn) {
         targetBtn.click();
       }

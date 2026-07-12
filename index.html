@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>Calculadora de Precios - Edición de Video de Alto Impacto</title>
+  <title>Edición de videos de alto impacto</title>
   <meta name="description" content="Calcula el presupuesto para la edición de tus Reels, TikToks y Shorts. Elige entre nuestros 3 niveles de edición y obtén descuentos exclusivos en paquetes mensuales.">
   <meta name="author" content="Behance Video Editor Portfolio">
   
@@ -50,7 +50,14 @@
       <div class="portfolio-box">
         <!-- Tabs selectors -->
         <div class="portfolio-tabs">
-          <button type="button" class="portfolio-tab active" data-portfolio-tier="1">
+          <button type="button" class="portfolio-tab active" data-portfolio-tier="0">
+            <span class="tab-num">00</span>
+            <div class="tab-title">
+              <h4>Nivel 0: Crudo</h4>
+              <span>Origen Celular</span>
+            </div>
+          </button>
+          <button type="button" class="portfolio-tab" data-portfolio-tier="1">
             <span class="tab-num">01</span>
             <div class="tab-title">
               <h4>Nivel 1: Esencial</h4>
@@ -78,7 +85,7 @@
           <!-- Video Frame -->
           <div class="player-container">
             <div class="player-frame">
-              <video id="portfolio-player" src="Portafolio/Primer video con subtitulos.mp4" controls muted loop playsinline poster="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111318%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%2364748b%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.3em%22>Carga tu video aquí</text></svg>">
+              <video id="portfolio-player" src="Portafolio/Video previo 1.mp4" controls muted loop playsinline poster="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111318%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%2364748b%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.3em%22>Carga tu video aquí</text></svg>">
                 Tu navegador no soporta reproducción de video.
               </video>
             </div>
@@ -87,22 +94,22 @@
           <!-- Info Details -->
           <div class="portfolio-info">
             <div class="info-header">
-              <span class="badge" id="portfolio-badge">Fase de Edición 1</span>
-              <h3 id="portfolio-title">Nivel 1: Esencial</h3>
-              <p id="portfolio-description">Mapea y pule el bruto de tu celular. Eliminamos silencios incómodos y añadimos subtítulos legibles para que te entiendan incluso sin audio.</p>
+              <span class="badge" id="portfolio-badge">Fase de Origen</span>
+              <h3 id="portfolio-title">Nivel 0: Video Crudo</h3>
+              <p id="portfolio-description">El video tal y como se grabó desde el teléfono celular. Contiene silencios prolongados, errores de voz, muletillas y carece de dinamismo o apoyo visual.</p>
             </div>
 
             <!-- Retention Gauge -->
             <div class="retention-gauge-container">
               <div class="gauge-label">
                 <span>Retención Estimada en Redes</span>
-                <strong id="retention-percentage">35%</strong>
+                <strong id="retention-percentage">15%</strong>
               </div>
               <div class="gauge-bar-bg">
-                <div class="gauge-bar-fill" id="retention-bar" style="width: 35%; background: var(--accent-cyan);"></div>
+                <div class="gauge-bar-fill" id="retention-bar" style="width: 15%; background: var(--text-muted);"></div>
               </div>
               <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;" id="retention-comment">
-                Ideal para mantener presencia básica, pero con riesgo de abandono temprano.
+                Baja retención. La mayoría de los usuarios abandonan el video en los primeros 3 segundos.
               </p>
             </div>
 
@@ -110,15 +117,15 @@
             <div class="added-value-container">
               <h5>¿Qué cambia respecto a la grabación original?</h5>
               <ul class="added-value-list" id="added-value-list">
-                <li><i data-lucide="check"></i> <span>Elimina el 100% de los silencios, muletillas y "ehh..."</span></li>
-                <li><i data-lucide="check"></i> <span>Añade subtítulos con estilo para retener a los usuarios sin sonido.</span></li>
-                <li><i data-lucide="check"></i> <span>Pule el audio de fondo y estabiliza el volumen de la voz.</span></li>
+                <li><i data-lucide="x" style="color: var(--text-muted); width:18px; height:18px; margin-top:2px;"></i> <span>Sin cortes de silencios o errores.</span></li>
+                <li><i data-lucide="x" style="color: var(--text-muted); width:18px; height:18px; margin-top:2px;"></i> <span>Sin subtítulos (difícil de entender sin audio).</span></li>
+                <li><i data-lucide="x" style="color: var(--text-muted); width:18px; height:18px; margin-top:2px;"></i> <span>Audio y color en bruto (sin masterización).</span></li>
               </ul>
             </div>
 
-            <button type="button" class="btn btn-primary" id="portfolio-cta-btn" style="margin-top: 1.5rem;">
+            <button type="button" class="btn btn-secondary" id="portfolio-cta-btn" style="margin-top: 1.5rem;">
               <i data-lucide="chevron-right"></i>
-              Cotizar esta Edición
+              Cotizar Proyecto
             </button>
           </div>
         </div>
@@ -150,23 +157,19 @@
           <ul class="features-list">
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Corte limpio de silencios, muletillas y errores.</span>
+              <span>Cortes y flujo básico de clips (Lección 2.2)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Subtítulos dinámicos legibles y limpios.</span>
+              <span>Subtítulos automáticos y exportar (Lección 2.2.1)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Corrección de color y ecualización básica.</span>
+              <span>Corrección de color y ecualización básica</span>
             </li>
             <li style="color: var(--text-muted); text-decoration: line-through;">
               <i data-lucide="x-circle" style="color: var(--text-muted);"></i>
-              <span>Imágenes de apoyo (B-Roll) o stock.</span>
-            </li>
-            <li style="color: var(--text-muted); text-decoration: line-through;">
-              <i data-lucide="x-circle" style="color: var(--text-muted);"></i>
-              <span>Efectos de sonido (SFX) avanzados.</span>
+              <span>Ilustraciones, transiciones o efectos de sonido</span>
             </li>
           </ul>
           
@@ -189,23 +192,23 @@
           <ul class="features-list">
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Todo lo incluido en el Nivel 1.</span>
+              <span>Todo lo del Nivel 1</span>
             </li>
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Imágenes de apoyo (B-roll/stock estático).</span>
+              <span>Animaciones, transiciones y efectos (Lección 2.3)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Memes estáticos en pantalla (Estilo Flork).</span>
+              <span>Mejoras de audio, música y SFX (Lección 2.4)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Zoom-ins/out estratégicos y transiciones fluidas.</span>
+              <span>Ajustes de color, filtros y retoque (Lección 2.5)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2"></i>
-              <span>Efectos de sonido básicos (SFX) en los cortes.</span>
+              <span>B-rolls y memes estáticos de apoyo</span>
             </li>
           </ul>
           
@@ -229,23 +232,23 @@
           <ul class="features-list">
             <li>
               <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
-              <strong>Todo lo incluido en el Nivel 2.</strong>
+              <strong>Todo lo del Nivel 2</strong>
             </li>
             <li>
               <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
-              <span>Elementos gráficos y listas dinámicas en pantalla.</span>
+              <span>Eliminar fondo y duplicar capa (Lección 2.6)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
-              <span>Personajes y memes animados (Florks con movimiento).</span>
+              <span>Máscaras y encuadres avanzados (Lección 2.7)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
-              <span>Diseño de sonido detallado e impactos dramáticos.</span>
+              <span>Animaciones personalizadas con Keyframes (Lección 2.8)</span>
             </li>
             <li>
               <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
-              <strong>Estructura estratégica pensada en retención.</strong>
+              <strong>Edición estratégica y extras/tips (Lección 2.9)</strong>
             </li>
           </ul>
           
@@ -344,9 +347,9 @@
             </div>
 
             <div>
-              <a href="#" class="btn btn-primary" id="whatsapp-cta-btn" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="message-square" style="width: 18px; height: 18px;"></i>
-                Iniciar Proyecto en WhatsApp
+              <a href="#" class="btn btn-primary" id="telegram-cta-btn" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+                Iniciar Proyecto en Telegram
               </a>
               <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted); margin-top: 0.75rem;">
                 *El precio unitario final puede ajustarse según la complejidad específica de los videos.
@@ -377,40 +380,46 @@
           </thead>
           <tbody>
             <tr>
-              <td>Cortes de silencios y muletillas</td>
+              <td>Flujo y cortes básicos (Lección 2.2)</td>
               <td><span class="icon-check">✓ Incluido</span></td>
               <td><span class="icon-check">✓ Incluido</span></td>
               <td><span class="icon-check">✓ Incluido</span></td>
             </tr>
             <tr>
-              <td>Subtítulos Dinámicos</td>
+              <td>Subtítulos automáticos (Lección 2.2.1)</td>
               <td><span class="icon-check">✓ Legibles y limpios</span></td>
               <td><span class="icon-check">✓ Con colores y énfasis</span></td>
-              <td><span class="icon-check">✓ Con efectos y animaciones</span></td>
+              <td><span class="icon-check">✓ Efectos y animaciones</span></td>
             </tr>
             <tr>
-              <td>Zooms y Ritmo Visual</td>
+              <td>Transiciones y efectos (Lección 2.3)</td>
               <td><span class="icon-cross">✗ No</span></td>
-              <td><span class="icon-check">✓ Básico</span></td>
-              <td><span class="icon-check">✓ Avanzado y constante</span></td>
+              <td><span class="icon-check">✓ Básicos</span></td>
+              <td><span class="icon-check">✓ Avanzados y fluidos</span></td>
             </tr>
             <tr>
-              <td>Imágenes y Recursos de Apoyo</td>
-              <td><span class="icon-cross">✗ No</span></td>
-              <td><span class="icon-badge static">Estáticos (Stock)</span></td>
-              <td><span class="icon-badge animated">Animados / Detallados</span></td>
-            </tr>
-            <tr>
-              <td>Diseño de Sonido (SFX)</td>
-              <td><span class="icon-cross">✗ No</span></td>
-              <td><span>Básico (Cortes)</span></td>
+              <td>Audio, música y SFX (Lección 2.4)</td>
+              <td><span>Básico (Voz limpia)</span></td>
+              <td><span>Básico + Música</span></td>
               <td><strong class="text-gradient">Avanzado (Dramático/Memes)</strong></td>
             </tr>
             <tr>
-              <td>Enfoque en Conversión/Ads</td>
+              <td>Ajustes y retoque de color (Lección 2.5)</td>
+              <td><span>Básico (Corrección)</span></td>
+              <td><span class="icon-check">✓ Filtros de tono</span></td>
+              <td><span class="icon-check">✓ Gradación cinematográfica</span></td>
+            </tr>
+            <tr>
+              <td>Duplicado y máscaras (Lección 2.6 y 2.7)</td>
               <td><span class="icon-cross">✗ No</span></td>
-              <td><span>Medio</span></td>
-              <td><span class="icon-badge animated">Alta Retención / Estratégico</span></td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span class="icon-badge animated">Avanzado (Overlay/Fondo)</span></td>
+            </tr>
+            <tr>
+              <td>Animación de Keyframes (Lección 2.8 y 2.9)</td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span class="icon-badge animated">Alta Retención (Florks/Textos)</span></td>
             </tr>
             <tr>
               <td>Precio Estimado Unitario</td>
