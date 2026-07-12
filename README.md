@@ -77,3 +77,42 @@ Dado que es un proyecto de frontend puro (HTML/CSS/JS), puedes ejecutarlo de var
    python -m http.server 8000
    ```
    Luego abre `http://localhost:8000` en tu navegador.
+
+---
+
+## 🌐 Cómo Desplegar en GitHub Pages y Lanzar a Behance
+
+Para obtener una URL pública de tu portafolio interactivo y poder incrustarlo en Behance:
+
+### Paso 1: Crear un Repositorio en GitHub
+1. Inicia sesión en tu cuenta de [GitHub](https://github.com).
+2. Haz clic en **New** (Nuevo) para crear un repositorio vacío.
+3. Ponle un nombre (ejemplo: `portafolio-videos`) y mantenlo como **Public** (Público). No le agregues README ni .gitignore adicionales (ya los tienes creados localmente).
+4. Haz clic en **Create repository** (Crear repositorio).
+
+### Paso 2: Vincular tu Carpeta Local y Subir el Código
+Abre la consola en la carpeta de tu PC (ya hemos inicializado git y hecho el primer commit por ti) y ejecuta los siguientes comandos para conectar y subir tu código (reemplaza `TU_USUARIO` y `TU_REPOSITORIO` con tus datos de GitHub):
+```bash
+# Cambiar el nombre de la rama a main si es necesario
+git branch -M main
+
+# Vincular el repositorio remoto de GitHub
+git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+
+# Subir tu código a GitHub
+git push -u origin main
+```
+
+### Paso 3: Activar GitHub Pages
+1. Dentro de tu repositorio en GitHub, ve a la pestaña **Settings** (Configuración) en el menú superior.
+2. En la barra lateral izquierda, busca la sección **Code and automation** y haz clic en **Pages**.
+3. En la sección **Build and deployment**, bajo **Source**, selecciona **Deploy from a branch**.
+4. Debajo, en **Branch**, cambia `None` por **`main`** (y mantén `/ (root)`). Haz clic en **Save** (Guardar).
+5. Espera unos 1-2 minutos. Si refrescas la página, verás un recuadro arriba con un mensaje como: *"Your site is live at: https://TU_USUARIO.github.io/TU_REPOSITORIO/"*. ¡Esa es tu URL pública!
+
+### Paso 4: Incrustar en Behance
+1. En tu editor de proyectos de Behance, haz clic en **`</> Incrustar`** en el menú de la derecha.
+2. Copia y pega el código `iframe` reemplazando la URL por la tuya:
+```html
+<iframe src="https://TU_USUARIO.github.io/TU_REPOSITORIO/" width="100%" height="950" frameborder="0" style="border:0; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"></iframe>
+```
