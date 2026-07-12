@@ -1,0 +1,53 @@
+# Variables de entorno y secretos
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Archivos de claves y certificados
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# Wallets y archivos crypto
+**/wallets/
+**/keystore/
+*.seed
+*.mnemonic
+
+# Directorios de dependencias
+node_modules/
+venv/
+__pycache__/
+.venv/
+
+# Archivos de compilación y distribución
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos del IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+temp/
+*.tmp

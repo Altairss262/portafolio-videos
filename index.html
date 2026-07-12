@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Calculadora de Precios - Edición de Video de Alto Impacto</title>
+  <meta name="description" content="Calcula el presupuesto para la edición de tus Reels, TikToks y Shorts. Elige entre nuestros 3 niveles de edición y obtén descuentos exclusivos en paquetes mensuales.">
+  <meta name="author" content="Behance Video Editor Portfolio">
+  
+  <!-- Favicon placeholder (using system style) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-ambient">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Main Container -->
+  <main>
+    
+    <!-- HERO SECTION -->
+    <section class="hero container" id="inicio">
+      <span class="badge badge-premium">
+        <i data-lucide="sparkles" style="width: 14px; height: 14px; margin-right: 4px;"></i>
+        Portafolio & Tarifas 2026
+      </span>
+      <h1 class="text-gradient">Elige el Nivel de Impacto de tus Videos</h1>
+      <p>Transforma tus Shorts, Reels y TikToks con edición optimizada para retener y convertir. Calcula tu presupuesto de forma transparente o selecciona un plan mensual.</p>
+    </section>
+
+    <!-- VIDEO PORTFOLIO SHOWCASE SECTION -->
+    <section class="section container" id="portafolio">
+      <div class="text-center" style="margin-bottom: 3.5rem;">
+        <span class="badge badge-premium">Evolución Creativa</span>
+        <h2>Mira la Evolución de tu Video</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem; max-width: 650px; margin-inline: auto;">
+          Compara cómo se transforma una simple grabación de teléfono al pasar por nuestros diferentes niveles de edición estratégica.
+        </p>
+      </div>
+
+      <div class="portfolio-box">
+        <!-- Tabs selectors -->
+        <div class="portfolio-tabs">
+          <button type="button" class="portfolio-tab active" data-portfolio-tier="1">
+            <span class="tab-num">01</span>
+            <div class="tab-title">
+              <h4>Nivel 1: Esencial</h4>
+              <span>Cortes + Subtítulos</span>
+            </div>
+          </button>
+          <button type="button" class="portfolio-tab" data-portfolio-tier="2">
+            <span class="tab-num">02</span>
+            <div class="tab-title">
+              <h4>Nivel 2: Dinámico</h4>
+              <span>+ Zoom, Memes y SFX</span>
+            </div>
+          </button>
+          <button type="button" class="portfolio-tab" data-portfolio-tier="3">
+            <span class="tab-num">03</span>
+            <div class="tab-title">
+              <h4>Nivel 3: Alto Impacto</h4>
+              <span>+ Animaciones y Retención</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Player area -->
+        <div class="portfolio-content">
+          <!-- Video Frame -->
+          <div class="player-container">
+            <div class="player-frame">
+              <video id="portfolio-player" src="video1.mp4" controls muted loop playsinline poster="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111318%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%2364748b%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.3em%22>Carga tu video1.mp4 aquí</text></svg>">
+                Tu navegador no soporta reproducción de video.
+              </video>
+            </div>
+          </div>
+
+          <!-- Info Details -->
+          <div class="portfolio-info">
+            <div class="info-header">
+              <span class="badge" id="portfolio-badge">Fase de Edición 1</span>
+              <h3 id="portfolio-title">Nivel 1: Esencial</h3>
+              <p id="portfolio-description">Mapea y pule el bruto de tu celular. Eliminamos silencios incómodos y añadimos subtítulos legibles para que te entiendan incluso sin audio.</p>
+            </div>
+
+            <!-- Retention Gauge -->
+            <div class="retention-gauge-container">
+              <div class="gauge-label">
+                <span>Retención Estimada en Redes</span>
+                <strong id="retention-percentage">35%</strong>
+              </div>
+              <div class="gauge-bar-bg">
+                <div class="gauge-bar-fill" id="retention-bar" style="width: 35%; background: var(--accent-cyan);"></div>
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;" id="retention-comment">
+                Ideal para mantener presencia básica, pero con riesgo de abandono temprano.
+              </p>
+            </div>
+
+            <!-- Features details list -->
+            <div class="added-value-container">
+              <h5>¿Qué cambia respecto a la grabación original?</h5>
+              <ul class="added-value-list" id="added-value-list">
+                <li><i data-lucide="check"></i> <span>Elimina el 100% de los silencios, muletillas y "ehh..."</span></li>
+                <li><i data-lucide="check"></i> <span>Añade subtítulos con estilo para retener a los usuarios sin sonido.</span></li>
+                <li><i data-lucide="check"></i> <span>Pule el audio de fondo y estabiliza el volumen de la voz.</span></li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="portfolio-cta-btn" style="margin-top: 1.5rem;">
+              <i data-lucide="chevron-right"></i>
+              Cotizar esta Edición
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING TIERS SECTION -->
+    <section class="section container" id="planes">
+      <div class="text-center" style="margin-bottom: 3rem;">
+        <h2>Nuestros Niveles de Edición</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Diseñados para cada etapa de tu marca o negocio</p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <!-- LEVEL 1 CARD -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Nivel 1: Esencial</h3>
+            <p>Ideal para presencia constante con presupuesto ajustado.</p>
+          </div>
+          <div class="card-price">
+            <span class="currency">$</span>
+            <span class="amount">12</span>
+            <span class="period">USD / video</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 1.5rem;">Rango estimado: $10 - $15 USD</p>
+          
+          <ul class="features-list">
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Corte limpio de silencios, muletillas y errores.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Subtítulos dinámicos legibles y limpios.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Corrección de color y ecualización básica.</span>
+            </li>
+            <li style="color: var(--text-muted); text-decoration: line-through;">
+              <i data-lucide="x-circle" style="color: var(--text-muted);"></i>
+              <span>Imágenes de apoyo (B-Roll) o stock.</span>
+            </li>
+            <li style="color: var(--text-muted); text-decoration: line-through;">
+              <i data-lucide="x-circle" style="color: var(--text-muted);"></i>
+              <span>Efectos de sonido (SFX) avanzados.</span>
+            </li>
+          </ul>
+          
+          <button class="btn btn-secondary select-tier-btn" data-tier="1">Cotizar en Calculadora</button>
+        </article>
+
+        <!-- LEVEL 2 CARD -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Nivel 2: Dinámico</h3>
+            <p>Retén a la audiencia con apoyo visual y ritmo constante.</p>
+          </div>
+          <div class="card-price">
+            <span class="currency">$</span>
+            <span class="amount">25</span>
+            <span class="period">USD / video</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 1.5rem;">Rango estimado: $20 - $30 USD</p>
+          
+          <ul class="features-list">
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Todo lo incluido en el Nivel 1.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Imágenes de apoyo (B-roll/stock estático).</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Memes estáticos en pantalla (Estilo Flork).</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Zoom-ins/out estratégicos y transiciones fluidas.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span>Efectos de sonido básicos (SFX) en los cortes.</span>
+            </li>
+          </ul>
+          
+          <button class="btn btn-secondary select-tier-btn" data-tier="2">Cotizar en Calculadora</button>
+        </article>
+
+        <!-- LEVEL 3 CARD (FEATURED) -->
+        <article class="card card-featured">
+          <div class="card-ribbon">Recomendado</div>
+          <div class="card-header">
+            <h3>Nivel 3: Alto Impacto</h3>
+            <p>Optimizado 100% para conversión, anuncios y lanzamientos.</p>
+          </div>
+          <div class="card-price">
+            <span class="currency">$</span>
+            <span class="amount">50</span>
+            <span class="period">USD / video</span>
+          </div>
+          <p style="font-size: 0.85rem; color: #c084fc; margin-top: -1.5rem; margin-bottom: 1.5rem;">Rango estimado: $45 - $60 USD</p>
+          
+          <ul class="features-list">
+            <li>
+              <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
+              <strong>Todo lo incluido en el Nivel 2.</strong>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
+              <span>Elementos gráficos y listas dinámicas en pantalla.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
+              <span>Personajes y memes animados (Florks con movimiento).</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
+              <span>Diseño de sonido detallado e impactos dramáticos.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" style="color: var(--accent-secondary);"></i>
+              <strong>Estructura estratégica pensada en retención.</strong>
+            </li>
+          </ul>
+          
+          <button class="btn btn-primary select-tier-btn" data-tier="3">Cotizar en Calculadora</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ESTIMATOR SECTION -->
+    <section class="section container" id="calculadora">
+      <div class="text-center" style="margin-bottom: 3.5rem;">
+        <span class="badge">Tarificador Interactivo</span>
+        <h2>Personaliza tu Presupuesto</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Ajusta la cantidad de videos y calcula tu tarifa en tiempo real</p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-grid">
+          
+          <!-- Controls Panel -->
+          <div class="calc-controls">
+            
+            <!-- Tier selection -->
+            <div>
+              <label class="calc-field-label">Selecciona el Nivel de Edición</label>
+              <div class="level-selector" role="radiogroup">
+                <button type="button" class="level-btn active" data-level="1" id="btn-lvl-1" role="radio" aria-checked="true">Esencial</button>
+                <button type="button" class="level-btn" data-level="2" id="btn-lvl-2" role="radio" aria-checked="false">Dinámico</button>
+                <button type="button" class="level-btn" data-level="3" id="btn-lvl-3" role="radio" aria-checked="false">Alto Impacto</button>
+              </div>
+            </div>
+
+            <!-- Video Volume (Slider) -->
+            <div>
+              <label class="calc-field-label" for="video-range">
+                Cantidad de Videos 
+                <span class="slider-val-bubble" id="range-val-display">12</span>
+              </label>
+              <div class="slider-container">
+                <input type="range" id="video-range" class="range-slider" min="1" max="30" value="12">
+                <div class="slider-ticks">
+                  <span>1 video</span>
+                  <span>10 vids</span>
+                  <span>20 vids</span>
+                  <span>30 vids</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Monthly Subscription Toggle -->
+            <div class="toggle-wrapper">
+              <div class="toggle-info">
+                <h4>
+                  Paquete Mensual
+                  <span class="toggle-badge" id="discount-badge">Recomendado</span>
+                </h4>
+                <p>Asegura tu contenido constante con un 15% de descuento (12+ videos).</p>
+              </div>
+              <label class="switch" for="monthly-switch">
+                <input type="checkbox" id="monthly-switch" checked>
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+
+          </div>
+
+          <!-- Output Panel -->
+          <div class="calc-results">
+            <div class="results-header">
+              <span>Estimación de Presupuesto</span>
+              <div class="results-price">
+                <span class="currency">$</span>
+                <span class="number" id="total-price-display">0</span>
+                <span class="currency">USD</span>
+              </div>
+            </div>
+
+            <div class="results-breakdown">
+              <div class="breakdown-row">
+                <span>Nivel Seleccionado</span>
+                <span id="breakdown-level">Nivel 1: Esencial</span>
+              </div>
+              <div class="breakdown-row">
+                <span>Cantidad de Videos</span>
+                <span id="breakdown-qty">12 videos</span>
+              </div>
+              <div class="breakdown-row">
+                <span>Tarifa Base (Por video)</span>
+                <span id="breakdown-base-rate">$12 USD</span>
+              </div>
+              <div class="breakdown-row" id="breakdown-discount-row">
+                <span>Descuento Pack Mensual (-15%)</span>
+                <span class="discount-text" id="breakdown-discount-amount">-$21.60 USD</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-primary" id="whatsapp-cta-btn" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="message-square" style="width: 18px; height: 18px;"></i>
+                Iniciar Proyecto en WhatsApp
+              </a>
+              <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted); margin-top: 0.75rem;">
+                *El precio unitario final puede ajustarse según la complejidad específica de los videos.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE SECTION -->
+    <section class="section container" id="comparativa">
+      <div class="text-center" style="margin-bottom: 3rem;">
+        <h2>Tabla Comparativa para el Cliente</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Analiza al detalle qué incluye cada nivel y elige el más conveniente</p>
+      </div>
+
+      <div class="table-container">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Nivel 1: Esencial</th>
+              <th>Nivel 2: Dinámico</th>
+              <th>Nivel 3: Alto Impacto (Ads)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cortes de silencios y muletillas</td>
+              <td><span class="icon-check">✓ Incluido</span></td>
+              <td><span class="icon-check">✓ Incluido</span></td>
+              <td><span class="icon-check">✓ Incluido</span></td>
+            </tr>
+            <tr>
+              <td>Subtítulos Dinámicos</td>
+              <td><span class="icon-check">✓ Legibles y limpios</span></td>
+              <td><span class="icon-check">✓ Con colores y énfasis</span></td>
+              <td><span class="icon-check">✓ Con efectos y animaciones</span></td>
+            </tr>
+            <tr>
+              <td>Zooms y Ritmo Visual</td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span class="icon-check">✓ Básico</span></td>
+              <td><span class="icon-check">✓ Avanzado y constante</span></td>
+            </tr>
+            <tr>
+              <td>Imágenes y Recursos de Apoyo</td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span class="icon-badge static">Estáticos (Stock)</span></td>
+              <td><span class="icon-badge animated">Animados / Detallados</span></td>
+            </tr>
+            <tr>
+              <td>Diseño de Sonido (SFX)</td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span>Básico (Cortes)</span></td>
+              <td><strong class="text-gradient">Avanzado (Dramático/Memes)</strong></td>
+            </tr>
+            <tr>
+              <td>Enfoque en Conversión/Ads</td>
+              <td><span class="icon-cross">✗ No</span></td>
+              <td><span>Medio</span></td>
+              <td><span class="icon-badge animated">Alta Retención / Estratégico</span></td>
+            </tr>
+            <tr>
+              <td>Precio Estimado Unitario</td>
+              <td><strong>$10 - $15 USD</strong></td>
+              <td><strong>$20 - $30 USD</strong></td>
+              <td><strong class="text-gradient-cyan">$45 - $60 USD</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PRO TIP / STRATEGY SECTION -->
+    <section class="section container" id="estrategia">
+      <div class="pro-tip-box">
+        <div class="pro-tip-icon">
+          <i data-lucide="lightbulb"></i>
+        </div>
+        <div class="pro-tip-content">
+          <span class="badge badge-premium">Tip Pro de Negocios</span>
+          <h3>¿Por qué elegir un Paquete Mensual en lugar de videos sueltos?</h3>
+          <p>
+            En lugar de comprar videos individuales, la mejor forma de crecer de manera constante en redes es mediante un plan de publicación programado. Ahorra en costos unitarios y asegura la producción recurrente de tu canal o marca.
+          </p>
+          <div class="pro-tip-points">
+            <div class="tip-point">
+              <i data-lucide="trending-up"></i>
+              <div class="tip-point-text">
+                <h5>Consistencia Algorítmica</h5>
+                <p>El algoritmo premia la constancia. Un pack mensual garantiza contenido estable y constante.</p>
+              </div>
+            </div>
+            <div class="tip-point">
+              <i data-lucide="percent"></i>
+              <div class="tip-point-text">
+                <h5>Descuento Predecible</h5>
+                <p>Obtienes una tarifa plana y predecible al mes que reduce tu costo por video hasta en un 15%.</p>
+              </div>
+            </div>
+            <div class="tip-point">
+              <i data-lucide="dollar-sign"></i>
+              <div class="tip-point-text">
+                <h5>Retorno de Inversión (ROI)</h5>
+                <p>El Nivel 3 está diseñado para convertir. No pagas por "edición bonita", pagas por anuncios optimizados que traen más clientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <span class="text-gradient">BEHANCE</span> PORTFOLIO
+      </div>
+      <p style="margin-bottom: 1.5rem; font-size: 0.95rem; max-width: 500px; margin-inline: auto;">
+        Servicios profesionales de edición de video para creadores y marcas que buscan impactar en el feed.
+      </p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Behance"><i data-lucide="chrome" style="width: 20px; height: 20px;"></i></a>
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width: 20px; height: 20px;"></i></a>
+        <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width: 20px; height: 20px;"></i></a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026. Todos los derechos reservados. Edición de Video Profesional.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Interactive logic script -->
+  <script src="app.js"></script>
+</body>
+</html>
