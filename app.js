@@ -284,7 +284,7 @@ const PORTFOLIO_DATA = {
     badge: "Fase de Origen",
     title: "Nivel 0: Video Crudo",
     description: "El video tal y como se grabó desde el teléfono celular. Contiene silencios prolongados, errores de voz, muletillas y carece de dinamismo o apoyo visual.",
-    videoSrc: "Portafolio/Video previo 1.mp4",
+    videoSrc: "Portafolio/video-previo-1.mp4",
     retention: "15%",
     retentionVal: 15,
     retentionColor: "var(--text-muted)",
@@ -299,14 +299,14 @@ const PORTFOLIO_DATA = {
     badge: "Fase de Edición 1",
     title: "Nivel 1: Esencial",
     description: "Mapea y pule el bruto de tu celular. Eliminamos silencios incómodos y añadimos subtítulos legibles para que te entiendan incluso sin audio.",
-    videoSrc: "Portafolio/Primer video con subtitulos.mp4",
+    videoSrc: "Portafolio/video-nivel-1.mp4",
     retention: "35%",
     retentionVal: 35,
     retentionColor: "var(--accent-cyan)",
     comment: "Ideal para mantener presencia básica, pero con riesgo de abandono temprano.",
     addedValue: [
-      "Cortes y flujo básico de clips (Lección 2.2)",
-      "Subtítulos automáticos y exportar (Lección 2.2.1)",
+      "Cortes y flujo básico de clips 2.2",
+      "Subtítulos automáticos y exportar 2.2.1",
       "Corrección de color y ecualización básica"
     ]
   },
@@ -314,16 +314,16 @@ const PORTFOLIO_DATA = {
     badge: "Fase de Edición 2",
     title: "Nivel 2: Dinámico",
     description: "El salto de calidad. Hacemos que el video fluya agregando B-rolls, memes y zooms constantes para que la vista del usuario no descanse.",
-    videoSrc: "Portafolio/Segundo video con ediciones .mp4",
+    videoSrc: "Portafolio/video-nivel-2.mp4",
     retention: "60%",
     retentionVal: 60,
     retentionColor: "var(--accent-primary)",
     comment: "Aumenta la retención visual media. Excelente para construir una marca sólida.",
     addedValue: [
       "Todo lo del Nivel 1 incluido.",
-      "Animaciones, transiciones y efectos (Lección 2.3)",
-      "Mejoras de audio, música y SFX (Lección 2.4)",
-      "Ajustes de color, filtros y retoque (Lección 2.5)",
+      "Animaciones, transiciones y efectos 2.3",
+      "Mejoras de audio, música y SFX 2.4",
+      "Ajustes de color, filtros y retoque 2.5",
       "Material de apoyo y B-rolls estáticos"
     ]
   },
@@ -331,17 +331,17 @@ const PORTFOLIO_DATA = {
     badge: "Fase de Edición 3",
     title: "Nivel 3: Alto Impacto",
     description: "La fórmula definitiva para campañas y lanzamientos. Diseño de sonido cinematográfico y animaciones fluidas diseñadas para enganchar y vender.",
-    videoSrc: "Portafolio/Tercer video con detallitos.mp4",
+    videoSrc: "Portafolio/video-nivel-3.mp4",
     retention: "85%",
     retentionVal: 85,
     retentionColor: "var(--accent-secondary)",
     comment: "Máxima retención para hooks de anuncios. Optimizado para convertir espectadores en clientes.",
     addedValue: [
       "Todo lo del Nivel 2 incluido.",
-      "Eliminar fondo y duplicar capa (Lección 2.6)",
-      "Máscaras y encuadres avanzados (Lección 2.7)",
-      "Animaciones personalizadas con Keyframes (Lección 2.8)",
-      "Edición estratégica y extras/tips (Lección 2.9)"
+      "Eliminar fondo y duplicar capa 2.6",
+      "Máscaras y encuadres avanzados 2.7",
+      "Animaciones personalizadas con Keyframes 2.8",
+      "Edición estratégica y extras/tips 2.9"
     ]
   }
 };
