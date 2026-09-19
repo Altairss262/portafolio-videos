@@ -428,6 +428,23 @@ function setupPortfolioShowcase() {
   }
 }
 
+/**
+ * Evita que varios casos del portafolio reproduzcan audio al mismo tiempo.
+ */
+function setupExclusiveVideoPlayback() {
+  const videos = document.querySelectorAll('video');
+
+  videos.forEach(video => {
+    video.addEventListener('play', () => {
+      videos.forEach(otherVideo => {
+        if (otherVideo !== video && !otherVideo.paused) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+}
+
 // ==========================================================================
 // INICIALIZACIÓN
 // ==========================================================================
@@ -443,6 +460,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMonthlySwitch();
   setupTierCardsButtons();
   setupPortfolioShowcase();
+  setupExclusiveVideoPlayback();
   
   // 3. Renderizar primer cálculo
   updateCalculator();

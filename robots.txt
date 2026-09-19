@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://altairss262.github.io/portafolio-videos/sitemap.xml
