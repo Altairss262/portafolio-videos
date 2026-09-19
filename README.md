@@ -8,7 +8,7 @@ Portafolio público de edición de video para Reels, TikToks y Shorts. El sitio 
 
 1. **El valor del diseño sonoro:** comparación directa entre `vaquero-base.mp4` y `vaquero-diseno-sonoro.mp4`.
 2. **Yo en la Baticueva:** pieza de comedia con concepto, montaje y timing visual.
-3. **Gemini Pro:** anuncio vertical de 30 segundos con voz original, beneficios, precio, urgencia y contacto persistente.
+3. **Gemini Pro:** anuncio vertical de 15 segundos con una locución reconstruida a partir de la voz original, beneficios, precio, urgencia y contacto persistente.
 
 ## Funciones del sitio
 
