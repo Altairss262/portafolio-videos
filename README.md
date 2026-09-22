@@ -1,9 +1,9 @@
-# Portafolio audiovisual · ALTO IMPACTO
+# Portafolio · ALTO IMPACTO
 
 El proyecto ofrece dos recorridos:
 
-- **Portafolio** (/): muestra los trabajos y cierra con contacto directo, sin precios.
-- **Portafolio + servicios** (/servicios/): conserva niveles, planes, tabla comparativa y cotizador para Telegram.
+- **Portafolio** (/): muestra los trabajos y cierra con contacto directo.
+- **Portafolio y servicios** (/servicios/): conserva niveles, modalidades, tabla comparativa y cotizador para Telegram.
 
 **Sitio público:** https://altairss262.github.io/portafolio-videos/
 

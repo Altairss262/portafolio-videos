@@ -153,7 +153,7 @@ function updateTelegramLink(tier, qty, unitPrice, discount, total) {
     `- Nivel: ${tier.name}\n` +
     `- Cantidad: ${qty} ${qty === 1 ? 'video' : 'videos'}\n` +
     `- Modalidad: ${modeText}${discountText}\n` +
-    `- Precio promedio sugerido: $${unitPrice} USD por video\n\n` +
+    `- Referencia por video: $${unitPrice} USD\n\n` +
     `💰 Presupuesto Estimado: $${total.toFixed(2)} USD\n\n` +
     `Me gustaría conversar sobre los detalles de edición y comenzar.`;
 
