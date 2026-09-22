@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <base href="../">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>Portafolio audiovisual | Edición, sonido y aplicaciones</title>
-  <meta name="description" content="Portafolio audiovisual con casos de diseño sonoro, comedia, anuncios verticales y presentación de aplicaciones de gestión empresarial.">
+  <title>Portafolio y servicios de edición | Planes y precios</title>
+  <meta name="description" content="Portafolio audiovisual con casos de diseño sonoro, comedia y anuncios verticales. Compara niveles de edición y calcula el presupuesto de tu próximo Reel, TikTok o Short.">
   <meta name="author" content="ALTO IMPACTO">
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://altairss262.github.io/portafolio-videos/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_VE">
   <meta property="og:title" content="Portafolio de edición de video | ALTO IMPACTO">
-  <meta property="og:description" content="Casos reales de diseño sonoro, comedia, anuncios verticales y presentación de aplicaciones empresariales.">
+  <meta property="og:description" content="Casos reales de diseño sonoro, comedia y anuncios verticales, con planes y cotizador interactivo.">
   <meta property="og:url" content="https://altairss262.github.io/portafolio-videos/">
   <meta property="og:image" content="https://altairss262.github.io/portafolio-videos/Portafolio/gabriel-analytic-gestion-empresarial-poster.jpg">
   <meta property="og:image:alt" content="Fotograma de la presentación del aplicativo Gabriel Analytic">
@@ -35,7 +36,16 @@
     "url": "https://altairss262.github.io/portafolio-videos/",
     "description": "Edición de videos cortos para creadores y marcas: Reels, TikToks, Shorts, diseño sonoro y anuncios verticales.",
     "areaServed": "Worldwide",
-    "sameAs": ["https://t.me/Altairss262"]
+    "sameAs": ["https://t.me/Altairss262"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Niveles de edición de video",
+      "itemListElement": [
+        {"@type": "Offer", "name": "Nivel 1: Esencial", "priceCurrency": "USD", "price": "12"},
+        {"@type": "Offer", "name": "Nivel 2: Dinámico", "priceCurrency": "USD", "price": "25"},
+        {"@type": "Offer", "name": "Nivel 3: Alto Impacto", "priceCurrency": "USD", "price": "50"}
+      ]
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -90,10 +100,10 @@
     <section class="hero container" id="inicio">
       <span class="badge badge-premium">
         <i data-lucide="sparkles" style="width: 14px; height: 14px; margin-right: 4px;"></i>
-        Portafolio audiovisual 2026
+        Portafolio & Tarifas 2026
       </span>
-      <h1 class="text-gradient">Historias y productos explicados con impacto</h1>
-      <p>Una selección de trabajos donde la edición, el sonido y la narrativa convierten ideas, productos y aplicaciones en piezas claras y memorables.</p>
+      <h1 class="text-gradient">Elige el Nivel de Impacto de tus Videos</h1>
+      <p>Transforma tus Shorts, Reels y TikToks con edición optimizada para retener y convertir. Calcula tu presupuesto de forma transparente o selecciona un plan mensual.</p>
     </section>
 
     <!-- VIDEO PORTFOLIO SHOWCASE SECTION -->
@@ -182,10 +192,10 @@
               </ul>
             </div>
 
-            <a class="btn btn-secondary" id="portfolio-cta-btn" href="https://t.me/Altairss262" target="_blank" rel="noopener noreferrer" style="margin-top: 1.5rem;">
-              <i data-lucide="send"></i>
-              Contactar
-            </a>
+            <button type="button" class="btn btn-secondary" id="portfolio-cta-btn" style="margin-top: 1.5rem;">
+              <i data-lucide="chevron-right"></i>
+              Cotizar Proyecto
+            </button>
           </div>
         </div>
       </div>
@@ -275,7 +285,7 @@
     </section>
 
     <!-- PRICING TIERS SECTION -->
-    <section class="section container" id="planes" hidden>
+    <section class="section container" id="planes">
       <div class="text-center" style="margin-bottom: 3rem;">
         <h2>Nuestros Niveles de Edición</h2>
         <p style="color: var(--text-muted); margin-top: 0.5rem;">Precios estimados para videos en formato corto (Reels, TikToks, Shorts de hasta 1 minuto)</p>
@@ -401,7 +411,7 @@
     </section>
 
     <!-- INTERACTIVE ESTIMATOR SECTION -->
-    <section class="section container" id="calculadora" hidden>
+    <section class="section container" id="calculadora">
       <div class="text-center" style="margin-bottom: 3.5rem;">
         <span class="badge">Tarificador Interactivo</span>
         <h2>Personaliza tu Presupuesto</h2>
@@ -504,7 +514,7 @@
     </section>
 
     <!-- COMPARISON TABLE SECTION -->
-    <section class="section container" id="comparativa" hidden>
+    <section class="section container" id="comparativa">
       <div class="text-center" style="margin-bottom: 3rem;">
         <h2>Tabla Comparativa para el Cliente</h2>
         <p style="color: var(--text-muted); margin-top: 0.5rem;">Comparación de servicios para videos en formato corto de hasta 1 minuto (Reels/Shorts)</p>
@@ -575,7 +585,7 @@
     </section>
 
     <!-- PRO TIP / STRATEGY SECTION -->
-    <section class="section container" id="estrategia" hidden>
+    <section class="section container" id="estrategia">
       <div class="pro-tip-box">
         <div class="pro-tip-icon">
           <i data-lucide="lightbulb"></i>
@@ -613,21 +623,6 @@
       </div>
     </section>
 
-    <section class="section container portfolio-contact" id="contacto" aria-labelledby="contact-title">
-      <div class="pro-tip-box">
-        <div class="pro-tip-icon"><i data-lucide="message-circle"></i></div>
-        <div class="pro-tip-content">
-          <span class="badge badge-premium">Hablemos de tu proyecto</span>
-          <h2 id="contact-title">¿Tienes una idea, producto o aplicativo que necesitas explicar?</h2>
-          <p>Cuéntame qué quieres comunicar y veremos cómo convertirlo en una pieza audiovisual clara, atractiva y alineada con tu objetivo.</p>
-          <a class="btn btn-primary" href="https://t.me/Altairss262" target="_blank" rel="noopener noreferrer">
-            <i data-lucide="send" aria-hidden="true"></i>
-            Contactar por Telegram
-          </a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- FOOTER -->
@@ -652,6 +647,6 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <!-- Interactive logic script -->
-  <script src="app.js"></script>
+  <script src="servicios/app.js"></script>
 </body>
 </html>

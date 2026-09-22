@@ -1341,6 +1341,28 @@ input:checked + .switch-slider:before {
   margin-top: 1.5rem;
 }
 
+.case-study-grid-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.case-study-management {
+  margin-top: 1.5rem;
+}
+
+.work-video-landscape video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.portfolio-contact .pro-tip-box {
+  align-items: center;
+}
+
+.portfolio-contact .btn {
+  margin-top: 1.5rem;
+}
+
 .case-study-compact {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(190px, 0.65fr);

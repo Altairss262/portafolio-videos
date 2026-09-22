@@ -168,7 +168,6 @@ function updateTelegramLink(tier, qty, unitPrice, discount, total) {
  * Configura los botones de selección de nivel dentro de la calculadora
  */
 function setupLevelSelector() {
-  if (!document.getElementById('btn-lvl-1')) return;
   const buttons = [
     { el: document.getElementById('btn-lvl-1'), level: 1 },
     { el: document.getElementById('btn-lvl-2'), level: 2 },
@@ -208,7 +207,6 @@ function setupLevelSelector() {
  * Configura la respuesta del Slider de cantidad de videos
  */
 function setupRangeInput() {
-  if (!videoRangeInput) return;
   videoRangeInput.addEventListener('input', (e) => {
     const val = parseInt(e.target.value);
     state.videoQty = val;
@@ -231,7 +229,6 @@ function setupRangeInput() {
  * Configura la respuesta del interruptor de Paquete Mensual
  */
 function setupMonthlySwitch() {
-  if (!monthlySwitch) return;
   monthlySwitch.addEventListener('change', (e) => {
     state.isMonthly = e.target.checked;
     
@@ -419,7 +416,6 @@ function setupPortfolioShowcase() {
   if (portfolioCtaBtn) {
     portfolioCtaBtn.addEventListener('click', () => {
       const calcSection = document.getElementById('calculadora');
-      if (!calcSection || calcSection.hidden) return;
       calcSection.scrollIntoView({ behavior: 'smooth' });
 
       // Si el usuario cotiza desde Nivel 0 (Crudo), se redirige a Nivel 1 (Esencial)
@@ -467,7 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupExclusiveVideoPlayback();
   
   // 3. Renderizar primer cálculo
-  if (totalPriceDisplay) updateCalculator();
+  updateCalculator();
 });
 
 
